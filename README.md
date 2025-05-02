@@ -22,7 +22,7 @@ Welcome to the Pizza Runner Case Study! Follow Danny's journey as he combines th
 
 
 ## Data Cleaning & Data Transformation
-#customer_orders table Before
+# customer_orders table Before
   - The customer_orders table consists of individual pizza orders, with each row representing a unique pizza.
   - Key columns in the table are pizza_id, exclusions, and extras.
   - Before utilizing the data for queries, the exclusions and extras columns require a data cleaning process to ensure accuracy and consistency.
