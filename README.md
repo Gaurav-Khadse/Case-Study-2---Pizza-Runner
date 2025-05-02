@@ -18,7 +18,8 @@ Welcome to the Pizza Runner Case Study! Follow Danny's journey as he combines th
 
 ## Entity Relationship Diagram
 
-![image](https://github.com/user-attachments/assets/452e0a80-db06-4733-a70e-ba4700bf2e55)
+![Screenshot 2025-05-02 202315](https://github.com/user-attachments/assets/f1a0ac00-3dbc-421e-90e6-ae291f29bfbc)
+
 
 ## Data Cleaning & Data Transformation
 #customer_orders table Before
