@@ -65,9 +65,10 @@ FROM customer_orders;
 
   ![runner_orders table Before](https://github.com/user-attachments/assets/44021ba4-c272-4c70-a68e-c8054a8eeb34)
 
-The data in the orders table of Pizza Runner contains valuable information regarding the assignment of orders to runners, including pickup times, distances, and durations. However, it is crucial to note that the table may have some known data issues that require careful handling during data cleaning.
+  The data in the orders table of Pizza Runner contains valuable information regarding the assignment of orders to runners, including pickup times, distances, and durations. However, it is crucial to note that the 
+  table may have some known data issues that require careful handling during data cleaning.
 
-Here are the key points to consider when cleaning the data in the orders table:
+   Here are the key points to consider when cleaning the data in the orders table:
 
   - Verify Data Types: Before proceeding with data cleaning, it is essential to check the data types for each column in the schema SQL. Ensuring accurate data types will prevent potential data type mismatches and 
     errors in subsequent queries.
