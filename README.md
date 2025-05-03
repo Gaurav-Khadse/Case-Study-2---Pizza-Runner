@@ -125,10 +125,13 @@ MODIFY duration INT;
 ## Case Study Questions & Solutions
 ### A. Pizza Metrics🍕🍕
 1.How many pizzas were ordered?
+ ```sql
+select count(*) as cnt from customer_orders_temp;
+```
 - Answer:
 
    ![1 Pizza Matrices](https://github.com/user-attachments/assets/efd1ebf1-305f-4160-a2cd-6d6bc5ac8aa3)
 
-  - The SQL query selects the number of pizza orders (pizza_orders) from the customer_orders_tempp table.
-  - The COUNT(order_id) function calculates the total number of order IDs in the customer_orders_tempp table, effectively giving the count of pizza orders.
+  - The SQL query selects the number of pizza orders (pizza_orders) from the customer_orders_temp table.
+  - The COUNT(*) function calculates the total number of order IDs in the customer_orders_temp table, effectively giving the count of pizza orders.
   - As a result, the query presents the total count of pizza orders as pizza_orders.
