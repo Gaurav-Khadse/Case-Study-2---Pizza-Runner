@@ -153,3 +153,18 @@ FROM customer_orders_temp;
 
 
 3.How many successful orders were delivered by each runner?
+ ```sql
+SELECT runner_id,COUNT(order_id)AS orders_delivered
+FROM runner_orders_temp
+WHERE cancellation=''
+GROUP BY runner_id;
+```
+- Answer:
+  
+  ![3  Pizza Matrices](https://github.com/user-attachments/assets/a6356a8b-ed06-49bd-8068-0f37427ba2a8)
+  - The SQL query selects the runner_id and counts the number of orders delivered (orders_delivered) for each runner from the runner_orders_temp table.
+  - It retrieves data from the runner_orders_temp table.
+  - The query filters the data using the WHERE clause, selecting only the rows where the cancellation column is empty (i.e., no cancellation).
+  - Results are grouped by runner_id.
+  - The COUNT(order_id) function calculates the number of occurrences of each order_id in the runner_orders_temp table, giving the count of orders delivered by each runner.
+  - As a result, the query presents the total count of orders delivered as orders_delivered for each runner from the runner_orders_temp table.
