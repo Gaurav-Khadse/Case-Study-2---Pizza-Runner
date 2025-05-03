@@ -125,7 +125,7 @@ MODIFY duration INT;
 
 ## Case Study Questions & Solutions
 
-### A. Pizza Metrics🍕🍕
+- A. Pizza Metrics🍕🍕
 
 1.How many pizzas were ordered?
  ```sql
