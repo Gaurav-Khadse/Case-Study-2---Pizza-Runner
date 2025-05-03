@@ -121,3 +121,15 @@ MODIFY duration INT;
 - runner_orders table After AS runner_orders_temp
      
 ![runner_orders_temp](https://github.com/user-attachments/assets/1e85edf0-eef3-4021-9dae-e41a499fd9ce)
+
+
+## Case Study Questions & Solutions
+
+### A. Pizza Metrics🍕🍕
+
+1.How many pizzas were ordered?
+
+
+
+
+
