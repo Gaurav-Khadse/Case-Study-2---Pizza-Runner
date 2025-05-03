@@ -58,4 +58,5 @@ FROM customer_orders;
 ```
 
 - customer_orders table After
+  
   ![Customer orders After](https://github.com/user-attachments/assets/bd0a1ab0-c0b3-49df-8dbd-226baf2da64c)
