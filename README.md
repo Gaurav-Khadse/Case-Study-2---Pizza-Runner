@@ -131,8 +131,10 @@ MODIFY duration INT;
  ```sql
 select count(*) as cnt from customer_orders_temp;
 ```
-Answer:
-![1 Pizza Matrices](https://github.com/user-attachments/assets/a48e0448-f9f8-4a22-80d9-e1903fc69dc0)
+ Answer:
+ 
+  ![1 Pizza Matrices](https://github.com/user-attachments/assets/a48e0448-f9f8-4a22-80d9-e1903fc69dc0)
+
   - The SQL query selects the number of pizza orders (pizza_orders) from the customer_orders_temp table.
   - The COUNT(*) function calculates the total number of order IDs in the customer_orders_temp table, effectively giving the count of pizza orders.
   - As a result, the query presents the total count of pizza orders as pizza_orders.
