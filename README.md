@@ -135,3 +135,18 @@ select count(*) as cnt from customer_orders_temp;
   - The SQL query selects the number of pizza orders (pizza_orders) from the customer_orders_temp table.
   - The COUNT(*) function calculates the total number of order IDs in the customer_orders_temp table, effectively giving the count of pizza orders.
   - As a result, the query presents the total count of pizza orders as pizza_orders.
+
+2.How many unique customer orders were made?
+ ```sql
+
+SELECT COUNT(DISTINCT order_id) AS unique_orders
+FROM customer_orders_temp;
+
+```
+- Answer:
+  ![2  Pizza Matrices](https://github.com/user-attachments/assets/368e3369-69fb-4932-985f-beb80bc9a567)
+  - The SQL query selects the number of unique orders (unique_orders) from the customer_orders_temp table.
+  - The COUNT(DISTINCT order_id) function calculates the total count of distinct order IDs in the customer_orders_temp table, effectively giving the count of unique orders.
+  - As a result, the query presents the total count of unique orders as unique_orders.
+
+3.How many successful orders were delivered by each runner?
