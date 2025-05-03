@@ -125,9 +125,9 @@ MODIFY duration INT;
 
 ## Case Study Questions & Solutions
 
-- A. Pizza Metrics🍕🍕
+### A. Pizza Metrics🍕🍕
 
-1.How many pizzas were ordered?
+- 1.How many pizzas were ordered?
  ```sql
 select count(*) as cnt from customer_orders_temp;
 ```
