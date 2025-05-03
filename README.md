@@ -152,7 +152,7 @@ FROM customer_orders_temp;
   - As a result, the query presents the total count of unique orders as unique_orders.
 
 
-3.How many successful orders were delivered by each runner?
+#### 3.How many successful orders were delivered by each runner?
  ```sql
 SELECT runner_id,COUNT(order_id)AS orders_delivered
 FROM runner_orders_temp
