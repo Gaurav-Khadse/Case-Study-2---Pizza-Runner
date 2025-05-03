@@ -124,7 +124,7 @@ MODIFY duration INT;
 
 ## Case Study Questions & Solutions
 ### A. Pizza Metrics🍕🍕
-1.How many pizzas were ordered?
+#### 1.How many pizzas were ordered?
  ```sql
 select count(*) as cnt from customer_orders_temp;
 ```
@@ -137,7 +137,7 @@ select count(*) as cnt from customer_orders_temp;
   - As a result, the query presents the total count of pizza orders as pizza_orders.
 
  
-2.How many unique customer orders were made?
+#### 2.How many unique customer orders were made?
  ```sql
 
 SELECT COUNT(DISTINCT order_id) AS unique_orders
@@ -168,3 +168,30 @@ GROUP BY runner_id;
   - Results are grouped by runner_id.
   - The COUNT(order_id) function calculates the number of occurrences of each order_id in the runner_orders_temp table, giving the count of orders delivered by each runner.
   - As a result, the query presents the total count of orders delivered as orders_delivered for each runner from the runner_orders_temp table.
+
+ #### 4.How many of each type of pizza was delivered?
+ ```sql
+SELECT pizza_name,COUNT(C.pizza_id)AS delivered_order_count
+FROM customer_orders_temp C
+JOIN runner_orders_temp R ON C.order_id=R.order_id
+JOIN pizza_names PN ON C.pizza_id=PN.pizza_id
+WHERE cancellation=''
+GROUP BY pizza_name;
+
+ ```
+- Answer:
+  ![4 Pizza Matrices](https://github.com/user-attachments/assets/a8a3a0c1-913f-4196-9ae3-3b229f7c80ed)
+  
+  - The SQL query retrieves the pizza_name and counts the number of delivered orders for each pizza (delivered_order_count) from the customer_orders_temp table.
+  - It retrieves data from the customer_orders_temp table and joins it with the runner_orders_temp table and the pizza_names table.
+  - The query performs joins between the tables based on matching order_id, pizza_id, and pizza_name.
+  - It also filters the data using the WHERE clause, selecting only the rows where the cancellation column is empty (i.e., no cancellation).
+  - Results are grouped by pizza_name to get the count of delivered orders for each pizza.
+  - The COUNT(C.pizza_id) function calculates the number of occurrences of each pizza_id in the customer_orders_temp table, giving the count of delivered orders for each pizza.
+  - As a result, the query presents the total count of delivered orders as delivered_order_count for each pizza from the customer_orders_temp, runner_orders_temp, and pizza_names tables.
+  
+
+
+
+
+
