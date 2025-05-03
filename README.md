@@ -210,4 +210,157 @@ ORDER BY C.customer_id;
   - As a result, the query presents the total count of ordered pizzas as count_ord for each customer and pizza combination from the customer_orders_temp and pizza_names tables.
   - The final result is sorted in ascending order based on the customer_id.
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Key Insights
+- Analyzing pizza orders and customer preferences can guide menu optimization.
+- Identifying top-performing runners ensures efficient delivery and customer satisfaction.
+- Understanding customer order patterns aids in targeted promotions and staffing.
+- Ingredient optimization reduces food waste and enhances inventory management.
+- Data cleaning ensures accurate analysis and informed decision-making.
+- Improving the customer experience fosters loyalty and business growth.
+- Data-driven decisions lead to better resource allocation and growth opportunities.
+- Runner Sign-Ups: Analyzing the number of runners signing up each week helps identify trends and patterns in runner recruitment and engagement.
+- Delivery Time Analysis: Calculating the average time it takes for runners to arrive at Pizza Runner HQ for order pickups can reveal efficiency levels and potential areas for improvement in the delivery process.
+- Order Preparation and Pizza Count: Exploring any relationship between the number of pizzas ordered and the time it takes to prepare them can assist in optimizing kitchen operations and delivery timelines.
+- Customer Average Distance: Understanding the average distance traveled for each customer's orders can help identify delivery patterns and optimize delivery routes.
+- Longest and Shortest Delivery Times: Analyzing the difference between the longest and shortest delivery durations can reveal variations in delivery efficiency and potential outliers.
+- Runner Average Speed: Calculating the average speed of each runner for each delivery provides insights into their performance and helps identify high-performing runners.
+- Successful Delivery Percentage: Determining the successful delivery percentage for each runner allows assessing their reliability and performance in completing orders.
+- Standard Ingredients for Each Pizza: Understanding the standard ingredients for each pizza helps identify the base recipe and essential toppings used for various pizza types.
+- Most Commonly Added Extra: Analyzing the most commonly added extra topping provides insights into customer preferences and popular customization choices.
+- Most Common Exclusion: Identifying the most common exclusion topping helps understand popular preferences for omitting specific ingredients.
+- Generating Order Items: Creating formatted order items for each record in the customer_orders table allows presenting detailed information about each order, including the pizza name, excluded toppings, and extra toppings.
+
+
+
+
+
+
   
