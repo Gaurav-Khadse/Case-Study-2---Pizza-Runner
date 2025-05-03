@@ -81,4 +81,37 @@ FROM customer_orders;
     that may affect analysis results.
   - Address Known Data Issues: As there are known data issues in the table, special attention must be given to resolving these issues during the data cleaning process. Identifying and rectifying data discrepancies 
     will enhance the accuracy and reliability of the dataset.
+ ```sql
+    DROP TABLE IF EXISTS runner_orders_temp;
 
+    CREATE TABLE runner_orders_temp AS
+SELECT 
+  order_id,
+  runner_id,
+  CASE 
+    WHEN pickup_time IS NULL OR pickup_time = 'null' THEN NULL
+    ELSE pickup_time
+  END AS pickup_time,
+  CASE 
+    WHEN distance IS NULL OR distance = 'null' THEN NULL
+    WHEN distance LIKE '%km' THEN TRIM(TRAILING 'km' FROM distance)
+    ELSE distance
+  END AS distance,
+  CASE 
+    WHEN duration IS NULL OR duration = 'null' THEN NULL
+    WHEN duration LIKE '%minutes' THEN TRIM(TRAILING 'minutes' FROM duration)
+    WHEN duration LIKE '%minute' THEN TRIM(TRAILING 'minute' FROM duration)
+    WHEN duration LIKE '%mins' THEN TRIM(TRAILING 'mins' FROM duration)
+    ELSE duration
+  END AS duration,
+  CASE 
+    WHEN cancellation IS NULL OR cancellation = 'null' THEN ''
+    ELSE cancellation
+  END AS cancellation
+FROM runner_orders;
+
+
+```
+
+
+     
