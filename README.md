@@ -57,6 +57,27 @@ FROM customer_orders;
 
 ```
 
-- customer_orders table After
+- customer_orders table After as customer_orders_temp
   
   ![Customer orders After](https://github.com/user-attachments/assets/bd0a1ab0-c0b3-49df-8dbd-226baf2da64c)
+
+- runner_orders table Before
+
+  ![runner_orders table Before](https://github.com/user-attachments/assets/44021ba4-c272-4c70-a68e-c8054a8eeb34)
+
+The data in the orders table of Pizza Runner contains valuable information regarding the assignment of orders to runners, including pickup times, distances, and durations. However, it is crucial to note that the table may have some known data issues that require careful handling during data cleaning.
+
+Here are the key points to consider when cleaning the data in the orders table:
+
+  - Verify Data Types: Before proceeding with data cleaning, it is essential to check the data types for each column in the schema SQL. Ensuring accurate data types will prevent potential data type mismatches and 
+    errors in subsequent queries.
+  - Handle Incomplete Orders: Some orders may not be fully completed and can be canceled by either the restaurant or the customer. It is necessary to identify and properly handle these incomplete orders during the 
+    data cleaning process.
+  - Address Null Values: The table may contain null values in certain columns, such as pickup_time, distance, and duration. Properly handling these null values is crucial to avoid inaccuracies in the analysis.
+  - Validate Timestamps: The pickup_time column represents the timestamp when the runner arrives at Pizza Runner headquarters to pick up the pizzas. Validating and ensuring the consistency of these timestamps will 
+    be essential to maintain data integrity.
+  - Clean Distance and Duration: The distance and duration fields provide information about the runner's travel to deliver the order. Cleaning these fields involves checking for any outliers or inconsistencies 
+    that may affect analysis results.
+  - Address Known Data Issues: As there are known data issues in the table, special attention must be given to resolving these issues during the data cleaning process. Identifying and rectifying data discrepancies 
+    will enhance the accuracy and reliability of the dataset.
+
