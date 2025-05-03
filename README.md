@@ -122,26 +122,13 @@ MODIFY duration INT;
      
 ![runner_orders_temp](https://github.com/user-attachments/assets/1e85edf0-eef3-4021-9dae-e41a499fd9ce)
 
+## Case Study Questions & Solutions
+### A. Pizza Metrics🍕🍕
+1.How many pizzas were ordered?
+- Answer:
 
-<h1><a name="casestudyquestionsandsolutions"></a>Case Study Questions & Solutions</h1>
+   ![1 Pizza Matrices](https://github.com/user-attachments/assets/efd1ebf1-305f-4160-a2cd-6d6bc5ac8aa3)
 
-<h4><a name="a.pizzametrics"></a>A. Pizza Metrics🍕🍕</h4>
-
-<ol> 
-  <li><h5>How many pizzas were ordered?</h5></li>
- 
-```sql
-SELECT COUNT(order_id) AS pizza_orders
-FROM customer_orders_tempp
-
-```
-
-<h6>Answer:</h6>
-<img width="150" alt="Coding" src="https://github.com/Gaurav-Khadse/Case-Study-2-Danny-s-Dinner/assets/![1 Pizza Matrices](https://github.com/user-attachments/assets/63a55545-3794-4190-a00c-a44bed249b6e)
-">
-<ul>
-  <li>The SQL query selects the number of pizza orders (<code>pizza_orders</code>) from the <code>customer_orders_temp</code> table.</li>
-  <li>The <code>COUNT(*)</code> function calculates the total number of order IDs in the <code>customer_orders_temp</code> table, effectively giving the count of pizza orders.</li>
-  <li>As a result, the query presents the total count of pizza orders as <code>pizza_orders</code>.</li>
-</ul>
-
+  - The SQL query selects the number of pizza orders (pizza_orders) from the customer_orders_tempp table.
+  - The COUNT(order_id) function calculates the total number of order IDs in the customer_orders_tempp table, effectively giving the count of pizza orders.
+  - As a result, the query presents the total count of pizza orders as pizza_orders.
