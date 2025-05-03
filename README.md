@@ -110,8 +110,14 @@ SELECT
   END AS cancellation
 FROM runner_orders;
 
+ #Step 2: Alter column types to proper formats in MySQL
 
+ALTER TABLE runner_orders_temp
+MODIFY pickup_time DATETIME,
+MODIFY distance DECIMAL(5,2),
+MODIFY duration INT;
 ```
 
-
+- runner_orders table After AS runner_orders_temp
      
+![runner_orders_temp](https://github.com/user-attachments/assets/1e85edf0-eef3-4021-9dae-e41a499fd9ce)
