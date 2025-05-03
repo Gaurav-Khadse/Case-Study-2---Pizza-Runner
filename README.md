@@ -192,7 +192,22 @@ GROUP BY pizza_name;
   - As a result, the query presents the total count of delivered orders as delivered_order_count for each pizza from the customer_orders_temp, runner_orders_temp, and pizza_names tables.
   
 
+#### 5.How many Vegetarian and Meatlovers were ordered by each customer?
+ ```sql
+SELECT C.customer_id,PN.pizza_name,COUNT(PN.pizza_id)AS count_ord
+FROM customer_orders_temp C
+JOIN pizza_names PN ON C.pizza_id=PN.pizza_id
+GROUP BY C.customer_id,PN.pizza_name
+ORDER BY C.customer_id;
+ ```
+- Answer:
 
-
-
-
+  ![5 Pizza Matrices](https://github.com/user-attachments/assets/9e717c59-20b1-4ecd-a29e-aa53c72b5374)
+  - The SQL query retrieves the customer_id, pizza_name, and counts the number of ordered pizzas for each customer and pizza combination (count_ord) from the customer_orders_temp table.
+  - It retrieves data from the customer_orders_temp table and joins it with the pizza_names table based on matching pizza_id.
+  - Results are grouped by both customer_id and pizza_name to calculate the count of ordered pizzas for each customer and pizza combination.
+  - The COUNT(PN.pizza_id) function calculates the number of occurrences of each pizza_id in the customer_orders_temp table, giving the count of ordered pizzas for each customer and pizza combination.
+  - As a result, the query presents the total count of ordered pizzas as count_ord for each customer and pizza combination from the customer_orders_temp and pizza_names tables.
+  - The final result is sorted in ascending order based on the customer_id.
+  
+  
