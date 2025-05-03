@@ -137,10 +137,11 @@ FROM customer_orders_tempp
 ```
 
 <h6>Answer:</h6>
-<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/8_Week_SQL_challenge/assets/91487663/7f304383-b85d-4cb9-80ac-863f641647a3">
+<img width="150" alt="Coding" src="https://github.com/Gaurav-Khadse/Case-Study-2-Danny-s-Dinner/assets/![1 Pizza Matrices](https://github.com/user-attachments/assets/63a55545-3794-4190-a00c-a44bed249b6e)
+">
 <ul>
-  <li>The SQL query selects the number of pizza orders (<code>pizza_orders</code>) from the <code>customer_orders_tempp</code> table.</li>
-  <li>The <code>COUNT(order_id)</code> function calculates the total number of order IDs in the <code>customer_orders_tempp</code> table, effectively giving the count of pizza orders.</li>
+  <li>The SQL query selects the number of pizza orders (<code>pizza_orders</code>) from the <code>customer_orders_temp</code> table.</li>
+  <li>The <code>COUNT(*)</code> function calculates the total number of order IDs in the <code>customer_orders_temp</code> table, effectively giving the count of pizza orders.</li>
   <li>As a result, the query presents the total count of pizza orders as <code>pizza_orders</code>.</li>
 </ul>
 
