@@ -180,6 +180,7 @@ GROUP BY pizza_name;
 
  ```
 - Answer:
+  
   ![4 Pizza Matrices](https://github.com/user-attachments/assets/a8a3a0c1-913f-4196-9ae3-3b229f7c80ed)
   
   - The SQL query retrieves the pizza_name and counts the number of delivered orders for each pizza (delivered_order_count) from the customer_orders_temp table.
